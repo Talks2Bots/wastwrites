@@ -14,13 +14,13 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'REA
 
 # Collections for story categories
 collections:
-  pure-human:
+  pure_human:
     output: true
     permalink: /stories/:name/
-  human-ai:
+  human_ai:
     output: true  
     permalink: /stories/:name/
-  pure-ai:
+  pure_ai:
     output: true
     permalink: /stories/:name/
 

@@ -8,7 +8,7 @@ nav_exclude: true
 <p class="subtitle">Stories generated entirely by artificial intelligence</p>
 
 <ul class="content-listing">
-  {% for story in site.pure-ai %}
+  {% for story in site.pure_ai %}
     <li class="listing">
       <hr class="slender">
       <a href="{{ story.url | prepend: site.baseurl }}"><h3 class="contrast">{{ story.title }}</h3></a>
@@ -18,6 +18,6 @@ nav_exclude: true
   {% endfor %}
 </ul>
 
-{% if site.pure-ai.size == 0 %}
+{% if site.pure_ai.size == 0 %}
 <p><em>No stories in this category yet. Check back soon!</em></p>
 {% endif %} 

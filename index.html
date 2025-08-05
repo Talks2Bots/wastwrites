@@ -6,7 +6,7 @@ title: stories
 
   <h1 class="content-listing-header sans">Recent Stories</h1>
   <ul class="content-listing ">
-    {% assign all_stories = site.pure-human | concat: site.human-ai | concat: site.pure-ai | sort: 'date' | reverse %}
+    {% assign all_stories = site.pure_human | concat: site.human_ai | concat: site.pure_ai | sort: 'date' | reverse %}
     {% for story in all_stories %}      
         <li class="listing">
           <hr class="slender">
