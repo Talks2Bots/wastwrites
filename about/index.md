@@ -3,12 +3,38 @@ layout: full-width
 title: About
 ---
 
-The *Tufte-Jekyll* theme is a natural extension of the work done by [Edward Tufte](https://github.com/edwardtufte/tufte-css) and his collaborators on Github who created a CSS file that allows web writers to use the same simple and elegant style employed in his published materials.
+**Wast Writes** is a curated collection of original short stories, presented with the timeless elegance and thoughtful typography inspired by Edward Tufte's design principles.
 
-To incorporate these styles into a Jekyll theme, I have made some very slight modifications that attempt to maintain the feel of the CSS styles in his Github repo.
+This digital library serves as a home for tales that explore the full spectrum of human experience—from quiet moments of introspection to grand adventures that stretch the boundaries of imagination. Each story is crafted with care and presented in a format that honors both the narrative and the reader's experience.
 
-Note that this is a full-width layout. This was accomplished by including ```layout: full-width``` in the YAML front matter for this page. Keep in mind that all the Tufte-Jekyll sidenote and marginnote goodness will not work on full-width layouts! 
+## The Design Philosophy
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll).
+The visual style of this site is based on the [Tufte-Jekyll theme](https://github.com/clayh53/tufte-jekyll), which draws inspiration from Edward Tufte's approach to information design. This means:
+
+- **Clean, readable typography** that doesn't distract from the story
+- **Generous white space** that allows the narrative to breathe
+- **Thoughtful use of sidenotes and margin notes** for additional context when needed
+- **Focus on content** over decoration
+
+## About the Stories
+
+Each piece published here represents a complete narrative journey, whether it spans a few pages or unfolds over several chapters. You'll find stories that:
+
+- Celebrate the extraordinary within the ordinary
+- Explore different genres, from literary fiction to speculative tales
+- Feature diverse characters and perspectives
+- Experiment with form and structure when the story calls for it
+
+## How to Read
+
+Stories are published as individual posts and can be read in any order. The site is designed for comfortable reading on any device, whether you prefer to read on your phone during a commute or settle in with a tablet for a longer reading session.
+
+Each story stands alone as a complete work, so feel free to browse and discover whatever catches your interest.
+
+## Contact
+
+Questions, comments, or feedback about the stories? Feel free to reach out through the site's contact options or engage with the content as it resonates with you.
+
+*Thank you for visiting, and happy reading.*
 
 

@@ -1,10 +1,10 @@
-baseurl: /tufte-jekyll
-title: Tufte-Jekyll
-subtitle: Content-centric blogging
-author: clay harmon
+baseurl: /wastwrites
+title: Wast Writes
+subtitle: A Collection of Short Stories
+author: Wast Writes
 simple_search: http://google.com/search
-description: A Jekyll theme for content-rich sites
-name: tufte
+description: A beautiful collection of short stories, styled with the elegant Tufte aesthetic
+name: wastwrites
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: /articles/:short_year/:title
