@@ -11,6 +11,19 @@ permalink: /articles/:short_year/:title
 timezone: America/New_York
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'SETUP_INSTRUCTIONS.md', 'vendor/', 'node_modules/', '.bundle/']
+
+# Collections for story categories
+collections:
+  pure-human:
+    output: true
+    permalink: /stories/:name/
+  human-ai:
+    output: true  
+    permalink: /stories/:name/
+  pure-ai:
+    output: true
+    permalink: /stories/:name/
+
 post:
   template: _post.txt
   extension: md
