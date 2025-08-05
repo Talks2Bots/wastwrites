@@ -1,14 +1,13 @@
 ---
 layout: full-width
-title: Human/AI Stories
-nav_exclude: true
+title: Pure Human Stories
 ---
 
-<h1 class="content-listing-header sans">Human/AI Stories</h1>
-<p class="subtitle">Stories created through human-AI collaboration</p>
+<h1 class="content-listing-header sans">Pure Human Stories</h1>
+<p class="subtitle">Stories written entirely by human authors</p>
 
 <ul class="content-listing">
-  {% for story in site.human_ai %}
+  {% for story in site.pure_human %}
     <li class="listing">
       <hr class="slender">
       <a href="{{ story.url | prepend: site.baseurl }}"><h3 class="contrast">{{ story.title }}</h3></a>
@@ -18,6 +17,6 @@ nav_exclude: true
   {% endfor %}
 </ul>
 
-{% if site.human_ai.size == 0 %}
+{% if site.pure_human.size == 0 %}
 <p><em>No stories in this category yet. Check back soon!</em></p>
 {% endif %} 
