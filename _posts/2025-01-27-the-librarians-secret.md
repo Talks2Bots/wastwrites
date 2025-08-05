@@ -2,7 +2,7 @@
 layout: post
 title: "The Librarian's Secret"
 date: 2025-01-27 10:00:00
-categories: fiction mystery
+category: pure ai
 ---
 
 {% newthought 'Every morning at precisely 8:47' %}, Eleanor Hartwell unlocked the heavy oak doors of the Whitmore Public Library, and every morning she performed the same ritual.<!--more--> Three steps into the main hall, pause by the circulation desk, and listen. The building held its breath in those early moments, as if the thousands of stories contained within its walls were still dreaming.

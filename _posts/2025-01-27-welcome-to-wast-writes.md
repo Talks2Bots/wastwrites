@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to Wast Writes"
 date: 2025-01-27 12:00:00
-categories: announcement
+category: pure ai
 ---
 
 {% newthought 'Welcome to Wast Writes' %}, a collection of short stories crafted with care and presented in the elegant style inspired by Edward Tufte's timeless design principles.<!--more--> Here, you'll find tales that range from the whimsical to the profound, each one designed to transport you to different worlds and perspectives.
