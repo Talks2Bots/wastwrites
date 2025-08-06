@@ -2,12 +2,11 @@
 layout: post
 title: "Just Dance"
 date: 2025-08-04 19:52:20
-category: fiction
 ---
 
 Just Dance
 
-“We need to go,” Emily said, keeping her tone measured. “The day’s final show is on in five minutes and the crowd's waiting,” Emily stood over Logan, looking fetching in her simmering gown that hugged her slender waist and opened into a full skirt the color of pink coral. She was well into her fifties, but her figure was trim and her attitude perky.
+{% newthought '“We need to go,” Emily said, keeping her tone measured.' %} “The day’s final show is on in five minutes and the crowd's waiting,” Emily stood over Logan, looking fetching in her simmering gown that hugged her slender waist and opened into a full skirt the color of pink coral. She was well into her fifties, but her figure was trim and her attitude perky.
 
 <!--more-->
 
@@ -33,11 +32,15 @@ Logan stood up and wiped his eyes with the back of his hand. Emily was relieved 
 
 “All right, let’s go,” he said.
 
+## The Performance
+
 As they approached the stage, they could hear the pulsating music. The audience was swaying in time to the rhythm of the music. Logan and Emily stepped onto the stage, holding hands. Logan bowed, Emily curtsied, and the crowd went wild, their tentacles curling and unfurling with excitement as they floated around the viewing arena. Some of their suckers stuck to the outside of the reverse fishbowl which contained the stage on which Logan and Emily performed.
 
 The couple began to dance, their fluid movements mesmerizing the crowd. They danced to the music, full-on ballroom style, like Fred Astaire and Ginger Rogers. Maybe the octopods had somehow seen the movies? For whatever reason, they were enthralled by the real thing. Ironically, before they were sucked up by the UFO, Logan and Emily didn’t even know how to dance, but once on the octopod planet, inside their reverse fishbowl, they gradually understood that ballroom dancing was what was desired, or required, of them.
 
 They had studied every day from videos they were provided. The better they got at dancing, the more their lives improved. They were moved from what was essentially a small containment pod to a furnished room. An effort was made to mimic human food. When they were sick, they received care. At some point, it had seemed like a good trade. After all, there wasn’t anything else for humans to do on octopod world, which seemed to be made completely of water, so they might as well learn to dance inside their little bowl.
+
+## Their Situation
 
 Then the performances started. At first, once a day. Now, six times a day. Otherwise, they ate, slept, and sometimes trained. For Emily, the crowd made it tolerable, if not enjoyable. Like today, there was a group of toddlers. Octopod children were almost cute, with their big eyes and cute little suckers, and they were so enthusiastic. “Look at that little guy… or gal,” Emily still couldn’t tell them apart, with its swaying blob of a head moving back and forth to the dance rhythm. She smiled and leaned into Logan’s step, even though she could feel her husband’s heart wasn’t in it today. In fact, it felt like she was dancing with a sack of flour. But she was growing used to his diminished performance capabilities and had learned to take the lead without it being too obvious.
 
@@ -48,6 +51,8 @@ Then there were the repetitive performances. Truly it was a nightmare. But still
 And Nick had been unshaken when Emily got the cancer diagnosis, while she herself had been a chocolate mess. He’d encouraged her and helped throughout her treatments. Speaking of the treatments, they’d been on Octoplanet (their name for it, since they didn’t know their host’s language) for over a year and Emily had never felt better.
 
 Now, in front of the final crowd of the day, she was able to take the lead in their foxtrot without the audience noticing. Her enthusiasm deflected from Nick’s half-hearted performance, and she channeled the energy of the crowd to pump up her steps and twirls. She smiled and could sense that she sparkled, the thousands of tentacles waving with appreciation.
+
+## The Confrontation
 
 Later that evening, after they’d rinsed and changed into freshly pressed scrubs, Emily slid open the door to the small compartment over the dining table where their meals were delivered. As usual, there were two plastic trays, each with a sizable, covered plate and a cup of juice. She reached in, pulled out one of the trays, and set it gently in front of Nick, trying to exude cheerfulness and nonchalance. She knew he was on edge.
 
@@ -95,6 +100,8 @@ Nick looked at her, then he stood up, grabbed the cup of jolly juice, and flung 
 
 That night Emily dreamt of the cottage on the lake where she and her family had spent idyllic summers before her parents had divorced. In the dream, the cottage was much grander and the rowboat nicer, with teak trim and oars of spruce. She rowed by herself across the translucent waters, bald eagles soaring overhead.
 
+## The Strike
+
 In the morning, Emily agreed with Logan that they would forego breakfast. The steaming egg-like substance and the glasses of juice sat untouched behind the sliding dispenser door. When the tone sounded, summoning them to appear for the first performance of the day, they were still lying in bed in their loose-fitting sleeping garb. The first summons was soon following by others, each higher in pitch and more urgent--angry even.
 
 Logan became fidgety, as if losing his conviction. “Are you sure we’re doing the right thing?” he asked anxiously, raising his voice over the strange sounds that blared out, calling them to their duty.
@@ -121,9 +128,13 @@ The more Logan receded, the more vigorous and alive she became. Each day she fel
 
 As Logan lay awake at night sobbing, Emily dreamed of endless summers on the lake. She could swim like never before, circumnavigating the entire body of water without tiring. Even more miraculous and thrilling, she could flap her arms and lift herself off the ground, catching the breeze to soar with the eagles.
 
+## Alone
+
 One morning when she woke up, Logan was gone. He had simply vanished. When it came time for the performance, Emily improvised a solo dance. She wasn’t nervous or self-conscious. She had never felt more self-assured. The octopods swayed their tentacles enthusiastically. Clearly, her solo performance was well received.
 
 Emily continued to drink the juice, to enjoy her meals, to dance, and to dream. At times she tried to grasp what was happening, why she was here, what it all signified, where Logan had gone. But she resigned herself to the fact that there was no way to make sense of it all. She’d never felt better, or this alive, or so powerful.
+
+## Back
 
 Then she woke up and had no idea where she was. She took a deep breath and blinked, struggling to focus. Logan’s face came into view, a smile spreading across his mouth.
 
