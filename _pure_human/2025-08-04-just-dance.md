@@ -143,3 +143,7 @@ Then she woke up and had no idea where she was. She took a deep breath and blink
 Her body oriented itself to the surroundings--the window with the blue curtains to the left, the bureau with the shell lamp straight ahead, the side table to the right, covered with her pill bottles.
 
 So, they had sent her home after all, she thought, and wondered where life would go from here.
+
+---
+
+*This concludes "Just Dance." Thank you for reading.*

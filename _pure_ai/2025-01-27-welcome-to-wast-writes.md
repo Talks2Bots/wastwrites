@@ -33,4 +33,8 @@ Each story is presented as a separate post, complete with:
 
 {% newthought 'Thank you' %} for visiting Wast Writes. Whether you're here for a quick escape or a deeper literary journey, I hope these stories provide the perfect companion for your reading adventures.
 
-*Happy reading!* 
+*Happy reading!*
+
+---
+
+*This concludes "Welcome to Wast Writes." Thank you for reading.* 
