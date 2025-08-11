@@ -24,6 +24,24 @@ collections:
     output: true
     permalink: /stories/:name/
 
+# Configure collection defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pure_human"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "human_ai"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pure_ai"
+    values:
+      layout: "post"
+
 post:
   template: _post.txt
   extension: md
