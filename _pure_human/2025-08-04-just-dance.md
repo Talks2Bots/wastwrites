@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Just Dance"
-date: 2025-08-15 00:00:00
+date: 2025-08-04 19:52:20
 ---
 
 {% newthought 'We need to go,' %} Emily said. "Five minutes."
@@ -108,3 +108,7 @@ She woke with no idea where she was. She took a breath and blinked until the roo
 Blue curtains to the left. A shell lamp straight ahead. Pill bottles to the right. Her wrist itched where a plastic bracelet had once rubbed, though she could not see a mark.
 
 So they had sent her home after all, she thought, or she had finally arrived. Either way, the day would ask for something, and she would decide whether to dance.
+
+---
+
+*This concludes "Just Dance." Thank you for reading.*
