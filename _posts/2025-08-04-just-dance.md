@@ -4,7 +4,9 @@ title: "Just Dance"
 date: 2025-08-04 19:52:20
 ---
 
-{% newthought 'We need to go,' %} Emily said. "Five minutes."
+{% newthought 'The summons climbed in pitch.' %} 
+
+'We need to go,' Emily said. "Five minutes."
 Nick sat at the little white table, top hat beside the orange drink, head in his hands. Tails, white bow tie, a carnation tired at the edges.
 
 "You go without me," he said.
