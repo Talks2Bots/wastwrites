@@ -1,16 +1,22 @@
 ---
 layout: page
-title: categories
+title: stories
+nav_exclude: true
 ---
 
-<div class="categories-dropdown">
-  <h2>Story Categories</h2>
-  <p>Browse stories by their creation method:</p>
+<div class="stories-page">
+  <h2>All Stories</h2>
+  <p>Browse all the stories in the collection:</p>
   
-  <ul class="category-list">
-    <li><a href="{{ site.baseurl }}/categories/pure-human/">Pure Human</a> - Stories written entirely by human authors</li>
-    <li><a href="{{ site.baseurl }}/categories/human-ai/">Human/AI</a> - Stories created through human-AI collaboration</li>
-    <li><a href="{{ site.baseurl }}/categories/pure-ai/">Pure AI</a> - Stories generated entirely by artificial intelligence</li>
+  <ul class="content-listing">
+    {% for post in site.posts %}
+      <li class="listing">
+        <hr class="slender">
+        <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+        <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span><br/>
+        <div>{{ post.excerpt }}</div>
+      </li>
+    {% endfor %}
   </ul>
 </div>
 

@@ -12,33 +12,11 @@ timezone: America/New_York
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md', 'SETUP_INSTRUCTIONS.md', 'vendor/', 'node_modules/', '.bundle/']
 
-# Collections for story categories
-collections:
-  pure_human:
-    output: true
-    permalink: /stories/:name/
-  human_ai:
-    output: true  
-    permalink: /stories/:name/
-  pure_ai:
-    output: true
-    permalink: /stories/:name/
-
-# Configure collection defaults
+# Default post settings
 defaults:
   - scope:
       path: ""
-      type: "pure_human"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "human_ai"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "pure_ai"
+      type: "posts"
     values:
       layout: "post"
 

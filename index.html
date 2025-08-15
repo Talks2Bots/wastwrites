@@ -6,13 +6,12 @@ title: stories
 
   <h1 class="content-listing-header sans">Recent Stories</h1>
   <ul class="content-listing ">
-    {% assign all_stories = site.pure_human | concat: site.human_ai | concat: site.pure_ai | sort: 'date' | reverse %}
-    {% for story in all_stories %}      
+    {% for post in site.posts %}      
         <li class="listing">
           <hr class="slender">
-          <a href="{{ story.url | prepend: site.baseurl }}"><h3 class="contrast">{{ story.title }}</h3></a>
-          <br><span class="smaller">{{ story.date | date: "%B %-d, %Y" }}</span>  <br/>
-          <div>{{ story.excerpt }}</div> 
+          <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+          <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+          <div>{{ post.excerpt }}</div> 
         </li>
     {% endfor %}
   </ul>
