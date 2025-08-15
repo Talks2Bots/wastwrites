@@ -9,6 +9,8 @@ Nick sat at the little white table, top hat beside the orange drink, head in his
 
 "You go without me," he said.
 
+<!--more-->
+
 She smoothed the coral skirt, set a hand on his shoulder. "We can’t disappoint the crowd."
 
 A buzzer sounded, flat then rising. The room was white on white: two chairs, a plastic table, a sleeping niche, a rinse stall, a bare practice room.
