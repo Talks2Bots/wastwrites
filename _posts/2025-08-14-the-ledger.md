@@ -46,4 +46,4 @@ She stood until the bus pulled away and the lilies thinned in the air. Then she 
 
 Inside, her apartment had the same furniture in the same places. She stared at the marble and felt the ache seize her limbs, a sharp pain that slowly released its grasp.
 
-She removed the tape from the top of Josh’s penny jar. The marble was there, where she’d left it. The world held. She let it.
+She removed the tape from the top of Josh’s penny jar. The marble was there. The world held. She let it.
