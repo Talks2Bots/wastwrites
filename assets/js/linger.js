@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log('Linger.js loaded and DOM ready');
   // Keyed per-post by H1 or path
   const storyKey = (document.querySelector('h1')?.textContent?.trim() || location.pathname).toLowerCase().replace(/\s+/g,'-');
+  console.log('Story key:', storyKey);
 
   // 1) COUNTERFACTUAL PROMPTS
   const cfkPrompts = {
@@ -56,7 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#cfk-input').value = '';
   };
   document.querySelector('.cfk-knob')?.addEventListener('click', e => {
-    const b = e.target.closest('button[role="tab"]'); if (!b) return;
+    console.log('CFK button clicked:', e.target);
+    const b = e.target.closest('button[role="tab"]'); 
+    if (!b) {
+      console.log('No button found');
+      return;
+    }
+    console.log('Setting CFK to:', b.dataset.stop);
     setCFK(b.dataset.stop);
   });
   $('#cfk-shuffle')?.addEventListener('click', () => setCFK(currentStop, true));
