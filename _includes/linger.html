@@ -1,0 +1,66 @@
+<div class="linger">
+  <details>
+    <summary>linger for a minute?</summary>
+
+    <!-- 1) COUNTERFACTUAL KNOB -->
+    <section aria-labelledby="cfk-title">
+      <h3 id="cfk-title">what if…</h3>
+      <div class="cfk-knob" role="tablist" aria-label="Counterfactual">
+        <button role="tab" aria-selected="true" data-stop="small">small edit</button>
+        <button role="tab" aria-selected="false" data-stop="big">big swing</button>
+        <button role="tab" aria-selected="false" data-stop="invert">inverted world</button>
+      </div>
+      <p id="cfk-prompt" class="cfk-prompt"></p>
+      <label class="cfk-label">
+        your one line:
+        <input id="cfk-input" type="text" maxlength="200" placeholder="type a single sentence">
+      </label>
+      <div class="cfk-actions">
+        <button id="cfk-save">keep</button>
+        <button id="cfk-shuffle" type="button">shuffle another</button>
+      </div>
+      <p id="cfk-status" class="cfk-status" aria-live="polite"></p>
+    </section>
+
+    <hr>
+
+    <!-- 2) TWO LENSES -->
+    <section aria-labelledby="lens-title">
+      <h3 id="lens-title">read it as…</h3>
+      <div class="lens-toggle" role="tablist" aria-label="Lens">
+        <button role="tab" aria-selected="true" data-lens="alien">alien bowl</button>
+        <button role="tab" aria-selected="false" data-lens="hospital">hospital</button>
+      </div>
+      <p id="lens-prompt" class="lens-prompt"></p>
+      <label class="lens-label">
+        your one line:
+        <input id="lens-input" type="text" maxlength="200" placeholder="type a single sentence">
+      </label>
+      <div class="lens-actions">
+        <button id="lens-save">keep</button>
+      </div>
+      <p id="lens-status" class="lens-status" aria-live="polite"></p>
+    </section>
+
+    <hr>
+
+    <!-- 4) TEN-WORD SEQUEL -->
+    <section aria-labelledby="ten-title">
+      <h3 id="ten-title">ten words more</h3>
+      <p class="ten-help">Write the next ten words of {{ include.character }}'s life.</p>
+      <input id="ten-input" type="text" placeholder="ten words, no more" />
+      <div class="ten-meta">
+        <span id="ten-count">0/10 words</span>
+        <button id="ten-save">keep</button>
+      </div>
+      <p id="ten-status" class="ten-status" aria-live="polite"></p>
+    </section>
+
+    <details class="notes">
+      <summary>your notes on this story</summary>
+      <ul id="linger-notes"></ul>
+    </details>
+
+  </details>
+</div>
+

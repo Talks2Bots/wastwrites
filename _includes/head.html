@@ -43,4 +43,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  
+  {% if page.layout == 'post' %}
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/linger.css" | prepend: site.baseurl }}">
+  <script src="{{ "/assets/js/linger.js" | prepend: site.baseurl }}" defer></script>
+  {% endif %}
 </head>

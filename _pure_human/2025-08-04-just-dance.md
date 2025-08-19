@@ -6,12 +6,10 @@ date: 2025-08-04 19:52:20
 
 {% newthought 'The summons climbed in pitch.' %} 
 
-'We need to go,' Emily said. "Five minutes."
+"We need to go," Emily said. "Five minutes."
 Nick sat at the little white table, top hat beside the orange drink, head in his hands. Tails, white bow tie, a carnation tired at the edges.
 
 "You go without me," he said.
-
-<!--more-->
 
 She smoothed the coral skirt, set a hand on his shoulder. "We can’t disappoint the crowd."
 
@@ -116,5 +114,3 @@ So they had sent her home after all, she thought, or she had finally arrived. Ei
 ---
 
 *This concludes "Just Dance." Thank you for reading.*
-
-{% include linger.html character="Emily" %}

@@ -1,0 +1,16 @@
+.linger details > summary { cursor:pointer; font-weight:600; margin: .5rem 0; }
+.linger section { margin: .75rem 0 1rem; }
+.cfk-knob, .lens-toggle { display:grid; grid-auto-flow: column; gap:.5rem; margin:.4rem 0; }
+.cfk-knob button, .lens-toggle button, .cfk-actions button, .lens-actions button, #ten-save {
+  padding:.35rem .6rem; border:1px solid #ccc; border-radius:999px; background:#fff; cursor:pointer;
+}
+[role="tab"][aria-selected="true"] { border-color:#111; }
+.cfk-prompt, .lens-prompt { margin:.35rem 0; font-style:italic; }
+.cfk-label, .lens-label { display:block; margin:.25rem 0; }
+input[type="text"] { width:100%; max-width:32rem; padding:.4rem .5rem; border:1px solid #ccc; border-radius:.4rem; }
+.ten-meta { display:flex; align-items:center; gap:.5rem; margin-top:.35rem; }
+.cfk-status, .lens-status, .ten-status { color:#5a5a5a; font-size:.9em; min-height:1.2em; }
+.notes summary { font-weight:500; }
+#linger-notes { padding-left:1.2rem; }
+hr { border:none; border-top:1px solid #eee; margin:.6rem 0; }
+
