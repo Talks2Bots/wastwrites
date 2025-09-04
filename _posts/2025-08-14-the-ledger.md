@@ -42,7 +42,7 @@ Josh smiled, but his eyes slipped past. He walked to the next doorway and folded
 
 ## Letting It Hold
 
- Mia stood until the bus pulled away and the lilies thinned in the air. Then she went back upstairs.
+Mia stood until the bus pulled away and the lilies thinned in the air. Then she went back upstairs.
 
 Inside, her apartment had the same furniture in the same places. She felt the ache seize her limbs, a sharp pain that slowly released its grasp.
 
