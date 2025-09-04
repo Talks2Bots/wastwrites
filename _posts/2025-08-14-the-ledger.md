@@ -34,7 +34,7 @@ When she woke near three, the flour ring was perfect. But the saucer beneath the
 
 ## Elsewhere
 
-She needed the hallway to be ordinary. She opened her door, saw the hall she knew, walked to the stairwell, and went down.
+Mia needed the hallway to be ordinary. She opened her door, saw the hall she knew, walked to the stairwell, and went down.
 
 Outside was not her street. The awnings wore unfamiliar logos. The air smelled like wet stone and lilies. A bus hissed past in colors she didn't recognize. Josh was there on the sidewalk, alive and moving quickly, already lifting his hand as if he knew her. Her chest lifted and stalled. She raised a hand, then stopped. The ground felt slanted, like the world had rotated by a few degrees.
 
@@ -42,8 +42,8 @@ Josh smiled, but his eyes slipped past. He walked to the next doorway and folded
 
 ## Letting It Hold
 
-She stood until the bus pulled away and the lilies thinned in the air. Then she went back upstairs.
+ Mia stood until the bus pulled away and the lilies thinned in the air. Then she went back upstairs.
 
-Inside, her apartment had the same furniture in the same places. She stared at the marble and felt the ache seize her limbs, a sharp pain that slowly released its grasp.
+Inside, her apartment had the same furniture in the same places. She felt the ache seize her limbs, a sharp pain that slowly released its grasp.
 
 She removed the tape from the top of Josh’s penny jar. The marble was there. The world held. She let it.
