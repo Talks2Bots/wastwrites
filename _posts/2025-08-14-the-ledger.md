@@ -28,7 +28,7 @@ When Mia woke near three, she padded to the kitchen, flipped the switch, and lif
 
 Mia sat, feeling the floor sway as if she were on water, and counted her breaths until the room steadied. Had the universe heard her telepathic plea? Or had she dreamed putting the marble under the cup? Her dreams had been so vivid lately; her mind so undependable.
 
-The next day, Mia set a more deliberate test. She wrote on a sticky note, dated and timed it, and taped it to the fridge: Placed marble under cup at 10:41 p.m. She wrapped strips of masking tape across the penny jar’s opening. She dusted a thin circle of flour around the cup to show if it moved. She set her phone to record and switched it to airplane mode.
+The next day, Mia set a more deliberate test. She wrote on a sticky note, dated and timed it, and taped it to the fridge: Placed marble under cup at 10:41 p.m. She stretched strips of masking tape across the penny jar’s opening. She dusted a thin circle of flour around the cup to show if it moved. She set her phone to record and switched it to airplane mode.
 
 When she woke near three, the flour ring was perfect. But the saucer beneath the cup was empty. The marble sat in Josh's jar. The tape over the lid was unbroken. Her phone showed no new recording. The sticky note on the fridge had her handwriting and her time, yet something about the slant of the letters looked borrowed. She stood there until the hum of the refrigerator sounded like a tone held too long.
 
