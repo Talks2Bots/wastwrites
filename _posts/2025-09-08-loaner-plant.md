@@ -7,6 +7,8 @@ categories: story
 
 The pothos was already a little long—green ropes slack with winter light—when Maya left for Zurich and handed me the pot. "Just water when the top is dry," she said, the kind of instruction that sounds simple until you have to trust it. By the window, the city made its usual gray noises; I could see my breath on the cold pane the first morning I checked the soil.
 
+<!--more-->
+
 I watered. It perked. A week later I nudged the curtain to give the vines more blue sky. I texted her a photo and she hearted it with a thanks and a plane emoji and a time I couldn't convert in my head. I watered again, not much. The stems felt like confidence.
 
 Then came the afternoon I thought about how dry airplane air is and whether that dryness reaches across oceans into apartments, and I poured a little more. The leaves went green and glossy in a way that felt like praise. I liked being good at this. I liked that I could be good at this.
