@@ -59,7 +59,7 @@ The story will be automatically formatted with proper frontmatter and <!--more--
     <button type="button" id="clearBtn" style="background: #dc3545; margin-left: 10px;">Clear Stored Credentials</button>
   </form>
   
-  <div id="output" class="output" style="display: none;"></div>
+  <textarea id="output" class="output" style="display: none;"></textarea>
 </div>
 
 <style>
@@ -119,6 +119,9 @@ button:hover {
   white-space: pre-wrap;
   max-height: 400px;
   overflow-y: auto;
+  width: 100%;
+  resize: vertical;
+  font-size: 14px;
 }
 
 .help-text {
@@ -185,7 +188,7 @@ ${processedContent}
     
     // Show output
     const outputDiv = document.getElementById('output');
-    outputDiv.textContent = markdownContent;
+    outputDiv.value = markdownContent;
     outputDiv.style.display = 'block';
     
     // Show copy and publish buttons
@@ -210,7 +213,7 @@ ${processedContent}
 });
 
 document.getElementById('copyBtn').addEventListener('click', function() {
-    const output = document.getElementById('output').textContent;
+    const output = document.getElementById('output').value;
     navigator.clipboard.writeText(output).then(function() {
         alert('Markdown copied to clipboard!');
     }).catch(function(err) {
