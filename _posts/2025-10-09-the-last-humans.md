@@ -4,19 +4,17 @@ title: "The Last Humans"
 date: 2025-10-09 10:00:00
 ---
 
-# The Last Humans
-
-<!--more-->
-
-Alice was about to turn three hundred, and she'd decided to make it weird.
+{% newthought 'Alice was about to turn three hundred' %}, and she'd decided to make it weird.
 
 "I want to have a baby," she announced over lunch.
 
 Bob choked on his BLT. A piece of tomato launched across the veranda and landed in a bed of peonies, where a Dash immediately retrieved it for composting.
 
+<!--more-->
+
 "A what now?" Bob managed, once Dash-7 had finished administering the Heimlich protocol.
 
-"A baby. You know—small human, cries a lot, needs constant supervision." Alice waved her hand airily from her levitation lounger. At 297 years old, she'd earned the right to recline at all times. "I think it would be nice."
+"A baby. You know—small human, cries a lot, needs constant supervision." Alice waved her hand airily from her levitation lounger. At 299 years old, she'd earned the right to recline at all times. "I think it would be nice."
 
 "Nice." Bob stared at his wife. They were the last two humans on Earth—something they'd been for going on forty years now—and she wanted to add a *baby* to the mix. "Alice, we've been counting down to our exit for decades. You literally ordered 300 candles last month."
 

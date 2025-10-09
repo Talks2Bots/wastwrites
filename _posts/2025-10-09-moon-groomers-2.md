@@ -4,11 +4,7 @@ title: "Moon Groomers 2"
 date: 2025-10-09 10:00:00
 ---
 
-Moon Groomers
-
-<!--more-->
-
-Z loved his job, which made him either enlightened or simple-minded, depending on who you asked at Lost Island Resort.
+{% newthought 'Z loved his job' %}, which made him either enlightened or simple-minded, depending on who you asked at Lost Island Resort.
 
 Every day he raked the beach into perfect parallel lines. Every day the tide and tourists destroyed his work. Every day he started over, smiling.
 
