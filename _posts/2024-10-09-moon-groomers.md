@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Moon Groomers 2"
-date: 2025-10-09 10:00:00
+title: "Moon Groomers"
+date: 2024-10-09 10:00:00
 ---
 
 {% newthought 'Z loved his job' %}, which made him either enlightened or simple-minded, depending on who you asked at Lost Island Resort.
