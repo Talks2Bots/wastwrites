@@ -32,26 +32,31 @@ nav_exclude: false
           <input type="radio" name="storyType" value="update" id="storyTypeUpdate">
           <span>Update Existing Story</span>
         </label>
+        <label class="radio-label">
+          <input type="radio" name="storyType" value="delete" id="storyTypeDelete">
+          <span>Delete Story</span>
+        </label>
       </div>
-      <div class="help-text">Select "New Story" to create a new post, or "Update Existing Story" to modify a story that's already published.</div>
+      <div class="help-text">Select an option: create a new story, update an existing one, or delete a story.</div>
     </div>
     
     <div class="form-group" id="existingStoryGroup" style="display: none;">
-      <label for="existingStory">Select Story to Update *</label>
+      <label for="existingStory" id="existingStoryLabel">Select Story *</label>
       <select id="existingStory">
         <option value="">Loading stories...</option>
       </select>
-      <div class="help-text">Choose which story you want to update. The original filename and date will be preserved.</div>
+      <div class="help-text" id="existingStoryHelp">Choose which story you want to work with.</div>
       <button type="button" id="refreshStoriesBtn" style="margin-top: 10px; background: #6c757d;">🔄 Refresh Story List</button>
+      <button type="button" id="deleteStoryBtn" style="display: none; margin-top: 10px; background: #dc3545;">🗑️ Delete Selected Story</button>
     </div>
     
-    <div class="form-group">
+    <div class="form-group" id="storyFormFields">
       <label for="title">Story Title *</label>
       <input type="text" id="title" required placeholder="Enter your story title">
       <div class="help-text">This will be the main heading of your story. You can change the title when updating a story.</div>
     </div>
     
-    <div class="form-group">
+    <div class="form-group" id="categoryFormField">
       <label for="category">Category (Optional)</label>
       <select id="category">
         <option value="">No category</option>
@@ -63,7 +68,7 @@ nav_exclude: false
       <div class="help-text">Most stories don't use categories. Leave as "No category" unless you specifically need one.</div>
     </div>
     
-    <div class="form-group">
+    <div class="form-group" id="contentFormField">
       <label for="content">Story Content *</label>
       <textarea id="content" placeholder="Paste your story here...
 
@@ -78,7 +83,7 @@ The story will be automatically formatted with proper frontmatter and <!--more--
       <div class="help-text">Paste your complete story content here. Markdown formatting is supported.</div>
     </div>
     
-    <button type="submit">Generate Markdown</button>
+    <button type="submit" id="generateBtn">Generate Markdown</button>
     <button type="button" id="copyBtn" style="display: none;">Copy to Clipboard</button>
     <button type="button" id="publishBtn" style="display: none;">🚀 Publish to GitHub</button>
     <button type="button" id="clearBtn" style="background: #dc3545; margin-left: 10px;">Clear Stored Credentials</button>
@@ -192,6 +197,11 @@ button:hover {
 // Global variable to store existing stories
 let existingStories = [];
 
+// Initialize UI on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateUIForStoryType();
+});
+
 // Function to fetch existing stories from GitHub
 async function fetchExistingStories() {
     const token = localStorage.getItem('github_token');
@@ -292,31 +302,89 @@ async function populateStoryDropdown() {
         return;
     }
     
-    dropdown.innerHTML = '<option value="">-- Select a story to update --</option>';
+    const storyType = document.querySelector('input[name="storyType"]:checked').value;
+    const labelText = storyType === 'delete' ? '-- Select a story to delete --' : '-- Select a story to update --';
+    dropdown.innerHTML = `<option value="">${labelText}</option>`;
     existingStories.forEach(story => {
         const option = document.createElement('option');
         option.value = story.filename;
         option.textContent = `${story.date} - ${story.title}`;
         option.dataset.sha = story.sha;
         option.dataset.date = story.date;
+        option.dataset.title = story.title;
         dropdown.appendChild(option);
     });
     
     dropdown.disabled = false;
 }
 
-// Toggle between new and update modes
+// Function to update UI based on story type
+function updateUIForStoryType() {
+    const storyType = document.querySelector('input[name="storyType"]:checked').value;
+    const existingStoryGroup = document.getElementById('existingStoryGroup');
+    const storyFormFields = document.getElementById('storyFormFields');
+    const categoryFormField = document.getElementById('categoryFormField');
+    const contentFormField = document.getElementById('contentFormField');
+    const generateBtn = document.getElementById('generateBtn');
+    const deleteBtn = document.getElementById('deleteStoryBtn');
+    const existingStoryLabel = document.getElementById('existingStoryLabel');
+    const existingStoryHelp = document.getElementById('existingStoryHelp');
+    
+    if (storyType === 'new') {
+        existingStoryGroup.style.display = 'none';
+        document.getElementById('existingStory').required = false;
+        storyFormFields.style.display = 'block';
+        categoryFormField.style.display = 'block';
+        contentFormField.style.display = 'block';
+        generateBtn.style.display = 'inline-block';
+        deleteBtn.style.display = 'none';
+        document.getElementById('title').required = true;
+        document.getElementById('content').required = true;
+    } else if (storyType === 'update') {
+        existingStoryGroup.style.display = 'block';
+        document.getElementById('existingStory').required = true;
+        storyFormFields.style.display = 'block';
+        categoryFormField.style.display = 'block';
+        contentFormField.style.display = 'block';
+        generateBtn.style.display = 'inline-block';
+        deleteBtn.style.display = 'none';
+        existingStoryLabel.textContent = 'Select Story to Update *';
+        existingStoryHelp.textContent = 'Choose which story you want to update. The original filename and date will be preserved.';
+        document.getElementById('title').required = true;
+        document.getElementById('content').required = true;
+    } else if (storyType === 'delete') {
+        existingStoryGroup.style.display = 'block';
+        document.getElementById('existingStory').required = true;
+        storyFormFields.style.display = 'none';
+        categoryFormField.style.display = 'none';
+        contentFormField.style.display = 'none';
+        generateBtn.style.display = 'none';
+        deleteBtn.style.display = 'inline-block';
+        existingStoryLabel.textContent = 'Select Story to Delete *';
+        existingStoryHelp.textContent = 'Choose which story you want to delete. This action cannot be undone!';
+        document.getElementById('title').required = false;
+        document.getElementById('content').required = false;
+    }
+}
+
+// Toggle between new, update, and delete modes
 document.getElementById('storyTypeNew').addEventListener('change', function() {
     if (this.checked) {
-        document.getElementById('existingStoryGroup').style.display = 'none';
-        document.getElementById('existingStory').required = false;
+        updateUIForStoryType();
     }
 });
 
 document.getElementById('storyTypeUpdate').addEventListener('change', function() {
     if (this.checked) {
-        document.getElementById('existingStoryGroup').style.display = 'block';
-        document.getElementById('existingStory').required = true;
+        updateUIForStoryType();
+        // Try to populate if we have credentials
+        populateStoryDropdown();
+    }
+});
+
+document.getElementById('storyTypeDelete').addEventListener('change', function() {
+    if (this.checked) {
+        updateUIForStoryType();
         // Try to populate if we have credentials
         populateStoryDropdown();
     }
@@ -332,9 +400,10 @@ document.getElementById('refreshStoriesBtn').addEventListener('click', function(
     });
 });
 
-// When an existing story is selected, optionally pre-fill the form
+// When an existing story is selected, optionally pre-fill the form (only in update mode)
 document.getElementById('existingStory').addEventListener('change', function() {
-    if (this.value && existingStories.length > 0) {
+    const storyType = document.querySelector('input[name="storyType"]:checked').value;
+    if (this.value && existingStories.length > 0 && storyType === 'update') {
         const selectedStory = existingStories.find(s => s.filename === this.value);
         if (selectedStory && !document.getElementById('title').value) {
             // Optionally pre-fill title, but let user edit it
@@ -347,6 +416,13 @@ document.getElementById('storyForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const storyType = document.querySelector('input[name="storyType"]:checked').value;
+    
+    // Don't process form submission in delete mode
+    if (storyType === 'delete') {
+        alert('Please use the "Delete Selected Story" button to delete a story.');
+        return;
+    }
+    
     const title = document.getElementById('title').value;
     const category = document.getElementById('category').value;
     const content = document.getElementById('content').value;
@@ -561,6 +637,126 @@ document.getElementById('publishBtn').addEventListener('click', function() {
     .finally(() => {
         publishBtn.textContent = '🚀 Publish to GitHub';
         publishBtn.disabled = false;
+    });
+});
+
+// Delete story button handler
+document.getElementById('deleteStoryBtn').addEventListener('click', function() {
+    const existingStorySelect = document.getElementById('existingStory');
+    
+    if (!existingStorySelect.value) {
+        alert('Please select a story to delete.');
+        return;
+    }
+    
+    const selectedOption = existingStorySelect.selectedOptions[0];
+    const filename = existingStorySelect.value;
+    const storyTitle = selectedOption.dataset.title || filename;
+    const storySha = selectedOption.dataset.sha;
+    
+    // Confirmation dialog
+    const confirmMessage = `Are you sure you want to delete "${storyTitle}"?\n\nThis action cannot be undone. The story will be permanently removed from the repository.`;
+    
+    if (!confirm(confirmMessage)) {
+        return;
+    }
+    
+    // Double confirmation for safety
+    if (!confirm('⚠️ FINAL CONFIRMATION ⚠️\n\nThis will permanently delete the story. Are you absolutely sure?')) {
+        return;
+    }
+    
+    const deleteBtn = this;
+    deleteBtn.textContent = 'Deleting...';
+    deleteBtn.disabled = true;
+    
+    // Check for stored credentials
+    let token = localStorage.getItem('github_token');
+    let username = localStorage.getItem('github_username');
+    
+    // If not stored, prompt for them
+    if (!token) {
+        token = prompt('Enter your GitHub Personal Access Token:');
+        if (!token) {
+            deleteBtn.textContent = '🗑️ Delete Selected Story';
+            deleteBtn.disabled = false;
+            return;
+        }
+        localStorage.setItem('github_token', token);
+    }
+    
+    if (!username) {
+        username = prompt('Enter your GitHub username:');
+        if (!username) {
+            deleteBtn.textContent = '🗑️ Delete Selected Story';
+            deleteBtn.disabled = false;
+            return;
+        }
+        localStorage.setItem('github_username', username);
+    }
+    
+    // Delete the file using GitHub API
+    const url = `https://api.github.com/repos/${username}/wastwrites/contents/_posts/${filename}`;
+    
+    // First, fetch the file to get the current SHA
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'Authorization': `token ${token}`,
+            'Accept': 'application/vnd.github.v3+json'
+        }
+    })
+    .then(response => {
+        if (response.status === 404) {
+            throw new Error('Story not found. It may have already been deleted.');
+        } else if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        return response.json();
+    })
+    .then(fileData => {
+        // Use the SHA from the fetched file (most current) or fall back to stored SHA
+        const sha = fileData.sha || storySha;
+        
+        if (!sha) {
+            throw new Error('Unable to get file SHA. Cannot delete without it.');
+        }
+        
+        // Delete the file
+        return fetch(url, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `token ${token}`,
+                'Content-Type': 'application/json',
+                'Accept': 'application/vnd.github.v3+json'
+            },
+            body: JSON.stringify({
+                message: `Delete story: ${storyTitle}`,
+                sha: sha
+            })
+        });
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.commit) {
+            alert(`✅ Story "${storyTitle}" has been deleted successfully!`);
+            // Reset the form and refresh story list
+            document.getElementById('storyForm').reset();
+            document.getElementById('storyTypeNew').checked = true;
+            updateUIForStoryType();
+            // Clear the dropdown selection
+            existingStorySelect.innerHTML = '<option value="">Story deleted - refresh to see updated list</option>';
+        } else {
+            alert('❌ Error deleting story: ' + (data.message || 'Unknown error'));
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('❌ Error deleting story: ' + error.message);
+    })
+    .finally(() => {
+        deleteBtn.textContent = '🗑️ Delete Selected Story';
+        deleteBtn.disabled = false;
     });
 });
 
