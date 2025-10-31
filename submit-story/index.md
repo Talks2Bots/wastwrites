@@ -473,14 +473,21 @@ date: ${dateStr} 10:00:00`;
     
     frontmatter += `\n---`;
     
-    // Split content into paragraphs and add <!--more--> after first paragraph
-    const paragraphs = content.split('\n\n').filter(p => p.trim());
+    // Check if user has already placed <!--more--> tag (case-insensitive, flexible spacing)
+    const moreTagRegex = /<!--\s*more\s*-->/i;
+    const hasMoreTag = moreTagRegex.test(content);
+    
     let processedContent = content;
     
-    if (paragraphs.length > 1 && !content.includes('<!--more-->')) {
-        // Insert <!--more--> after the first paragraph if not already present
-        processedContent = paragraphs[0] + '\n\n<!--more-->\n\n' + paragraphs.slice(1).join('\n\n');
+    // Only auto-insert <!--more--> if user hasn't placed it themselves
+    if (!hasMoreTag) {
+        const paragraphs = content.split('\n\n').filter(p => p.trim());
+        if (paragraphs.length > 1) {
+            // Insert <!--more--> after the first paragraph if not already present
+            processedContent = paragraphs[0] + '\n\n<!--more-->\n\n' + paragraphs.slice(1).join('\n\n');
+        }
     }
+    // If user has already placed <!--more-->, use their content exactly as-is
     
     const markdownContent = `${frontmatter}
 
