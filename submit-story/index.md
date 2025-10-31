@@ -332,7 +332,10 @@ function updateUIForStoryType() {
     
     if (storyType === 'new') {
         existingStoryGroup.style.display = 'none';
-        document.getElementById('existingStory').required = false;
+        const existingStorySelect = document.getElementById('existingStory');
+        existingStorySelect.removeAttribute('required');
+        existingStorySelect.required = false;
+        existingStorySelect.value = ''; // Clear any selection
         storyFormFields.style.display = 'block';
         categoryFormField.style.display = 'block';
         contentFormField.style.display = 'block';
@@ -342,7 +345,9 @@ function updateUIForStoryType() {
         document.getElementById('content').required = true;
     } else if (storyType === 'update') {
         existingStoryGroup.style.display = 'block';
-        document.getElementById('existingStory').required = true;
+        const existingStorySelect = document.getElementById('existingStory');
+        existingStorySelect.setAttribute('required', 'required');
+        existingStorySelect.required = true;
         storyFormFields.style.display = 'block';
         categoryFormField.style.display = 'block';
         contentFormField.style.display = 'block';
@@ -354,7 +359,9 @@ function updateUIForStoryType() {
         document.getElementById('content').required = true;
     } else if (storyType === 'delete') {
         existingStoryGroup.style.display = 'block';
-        document.getElementById('existingStory').required = true;
+        const existingStorySelect = document.getElementById('existingStory');
+        existingStorySelect.setAttribute('required', 'required');
+        existingStorySelect.required = true;
         storyFormFields.style.display = 'none';
         categoryFormField.style.display = 'none';
         contentFormField.style.display = 'none';
