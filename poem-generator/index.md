@@ -261,7 +261,8 @@ async function generatePoem() {
             role: 'user',
             content: 'Write an original poem. Be creative and expressive.'
           }
-        ]
+        ],
+        max_tokens: 500
       })
     });
     
