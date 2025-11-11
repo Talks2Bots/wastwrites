@@ -11,7 +11,13 @@ nav_exclude: false
   
   <div class="instructions">
     <p><strong>How it works:</strong> Click the button below to generate a poem. The generator uses AI to create original poetry based on a curated prompt.</p>
-    <p><em>Note: You'll need to provide your OpenRouter API key and model name on first use. These will be stored securely in your browser.</em></p>
+    <p><strong>Setup:</strong> On first use, you'll need to provide:</p>
+    <ul>
+      <li>Your OpenRouter API key</li>
+      <li>The model identifier (e.g., <code>nvidia/nemotron-nano-12b-2-vl</code>)</li>
+    </ul>
+    <p><em>To find the exact model identifier, check the model details in your <a href="https://openrouter.ai/models" target="_blank">OpenRouter dashboard</a>. The format is typically <code>provider/model-name</code> (e.g., <code>nvidia/nemotron-nano-12b-2-vl</code>).</em></p>
+    <p><em>Your credentials will be stored securely in your browser's localStorage.</em></p>
   </div>
   
   <div class="generator-controls">
@@ -206,7 +212,7 @@ function ensureCredentials() {
       return null;
     }
     
-    const model = prompt('Enter the OpenRouter model name (e.g., meta-llama/llama-3.2-3b-instruct:free):');
+    const model = prompt('Enter the OpenRouter model identifier (e.g., nvidia/nemotron-nano-12b-2-vl):\n\nFind it at: https://openrouter.ai/models');
     if (!model) {
       return null;
     }
@@ -261,7 +267,16 @@ async function generatePoem() {
     
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.error?.message || `HTTP ${response.status}: ${response.statusText}`);
+      let errorMessage = errorData.error?.message || `HTTP ${response.status}: ${response.statusText}`;
+      
+      // Provide helpful guidance for common errors
+      if (response.status === 400 || response.status === 404) {
+        if (errorMessage.toLowerCase().includes('model') || errorMessage.toLowerCase().includes('not found')) {
+          errorMessage += '\n\nTip: Make sure you entered the correct model identifier (e.g., nvidia/nemotron-nano-12b-2-vl). Check https://openrouter.ai/models for the exact identifier.';
+        }
+      }
+      
+      throw new Error(errorMessage);
     }
     
     const data = await response.json();
