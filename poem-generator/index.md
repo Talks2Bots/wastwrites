@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Poem Generator
+title: Poem Advent
 permalink: /poem-generator/
 nav_exclude: false
 ---
 
 <div class="poem-generator-container">
-  <h1>Poem Generator</h1>
+  <h1>Poem Advent</h1>
   <p class="subtitle">Generate a unique poem with the click of a button</p>
   
   <div class="instructions">
@@ -252,7 +252,7 @@ async function generatePoem() {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${credentials.apiKey}`,
         'HTTP-Referer': window.location.origin,
-        'X-Title': 'Wast Writes Poem Generator'
+        'X-Title': 'Wast Writes Poem Advent'
       },
       body: JSON.stringify({
         model: credentials.model,
