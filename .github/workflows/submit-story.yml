@@ -1,0 +1,32 @@
+name: Submit Story
+
+on:
+  repository_dispatch:
+    types: [submit-story]
+
+jobs:
+  submit-story:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Create story file
+        run: |
+          # Create the story file
+          cat > "_posts/${{ github.event.client_payload.filename }}" << 'EOF'
+          ${{ github.event.client_payload.content }}
+          EOF
+
+      - name: Commit and push
+        run: |
+          git add "_posts/${{ github.event.client_payload.filename }}"
+          git commit -m "Add new story: ${{ github.event.client_payload.title }}"
+          git push
