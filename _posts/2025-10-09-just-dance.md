@@ -6,15 +6,16 @@ date: 2025-10-09 10:00:00
 
 Just Dance 
 
-<!--more-->
 
 “We need to go,” Emily said, keeping her tone measured. “The day’s final show is on in five minutes and the crowd's waiting,” Emily stood over Logan, looking fetching in her simmering gown that hugged her slender waist and opened into a full skirt the color of pink coral. She was well into her fifties, but her figure was trim and her attitude perky. 
 
-Logan, of a similar post-midlife vintage, was seated at the little dining table in their sparse accommodations, his top hat resting next to a full glass of orange liquid, his head in his hands. He was dressed in a tuxedo with tails, a white bowtie, and had a fluffy white carnation pinned to his left lapel.  
+“You go without me,” her husband mumbled, without lifting his head.  
+
+<!--more-->
+
+Logan, of a similar post-midlife vintage as his wife, was seated at the little dining table in their sparse accommodations, his top hat resting next to a full glass of orange liquid, his head in his hands. He was dressed in a tuxedo with tails, a white bowtie, and had a fluffy white carnation pinned to his left lapel.  
 
 The room was glaringly white, furnished with two plastic chairs (though their actual material was unknown), a plastic dining table, something resembling an outdated TV, and a sleeping nook with a mattress just big enough for two. In one corner was a bathroom with toilet and provisional rinsing station. An adjacent room was completely bare and used for practice. 
-
-“You go without me,” Logan mumbled, without lifting his head.  
 
 “Honey, come on,” Emily said, injecting more urgency into her tone as she bent down closer to her husband. She put a hand on his shoulder reassuringly. “I know you’re not feeling up to it today, but we can’t disappoint the crowd.” 
 

@@ -4,11 +4,7 @@ title: "Moon Groomers"
 date: 2025-10-10 10:00:00
 ---
 
-Z loved his job, which made him either enlightened or simple-minded, depending on who you asked at Lost Island Resort. 
-
-<!--more-->
-
-Every day he raked the beach into perfect parallel lines. Every day the tide and tourists destroyed his work. Every day he started over, smiling. 
+Z loved his job, which made him either enlightened or simple-minded, depending on who you asked at Lost Island Resort. Every day he raked the beach into perfect parallel lines. Every day the tide and tourists destroyed his work. Every day he started over, smiling. 
 
 <!--more-->
 
