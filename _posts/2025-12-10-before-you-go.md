@@ -6,13 +6,13 @@ date: 2025-12-10 10:00:00
 
 We floated in the gray nothing, which was honestly pretty chill. 
 
-<!--more-->
-
 "Listen up, blobs!" The Recruiter manifested with a briefcase and desperate energy. "I've got sunsets! Chocolate! The sensation of diving into cool water on a hot day! Pizza! Dogs that are so happy to see you!" 
 
 We bobbed noncommittally. 
 
 "What's the catch?" asked Glob Seven. 
+
+<!--more-->
 
 The Recruiter's smile tightened. "Well. There's... physical pain. Betrayal. Watching everyone you love die, or dying first and leaving them. Taxes. The absolute certainty that nothing you do matters in the heat death of the universe." 
 
