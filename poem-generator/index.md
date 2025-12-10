@@ -2,7 +2,7 @@
 layout: page
 title: Poem Advent
 permalink: /poem-generator/
-nav_exclude: false
+nav_exclude: true
 ---
 
 <div class="poem-generator-container">
